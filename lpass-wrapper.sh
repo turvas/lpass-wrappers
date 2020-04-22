@@ -1,5 +1,7 @@
 #!/bin/sh
 # lpass-wrapper.sh
+# can be run all lpass commads, ensuring agent is active, if not then authenticate
+# initial ideas from https://svkt.org/~simias/lpass/
 
 which lpass > /dev/null
 if [ $? -ne 0 ]; then
